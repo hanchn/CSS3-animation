@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    html, body{
+        height: 100%;
+        padding-left: 100px;
+    }
+
+    .runner{
+        width: 266.666px;
+        height: 200px;
+        background: url('runner.png');
+        animation: run 1s steps(24) infinite, slide 4s steps(100) infinite;
+    }
+
+    @keyframes run{
+       100% {
+           background-position: -6400px;
+       }
+    }
+
+    @keyframes slide{
+       100% {
+           margin-left: -266.666px;
+       }
+    }    
+    </style>
+</head>
+<body>
+    <div class="runner"></div>
+</body>
+</html>
